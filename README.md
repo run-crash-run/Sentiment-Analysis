@@ -1,25 +1,8 @@
-# Sentiment Analysis using Stanford CoreNLP
-
-This is a Java project for Sentiment Analysis using Stanford CoreNLP.
-
-The [Stanford CoreNLP](https://nlp.stanford.edu/) provides statistical NLP, deep learning NLP, 
-and rule-based NLP tools for major computational linguistics problems, 
-which can be incorporated into applications with human language technology needs..
-
- 
-### Sentiment Analysis
-
-The underlying technology of this is based on a new type of Recursive Neural Network that builds on top of grammatical structures.
-
-The Java documentation for stanford nlp can be found [here](https://nlp.stanford.edu/nlp/javadoc/javanlp/).
-
-The [live](http://nlp.stanford.edu:8080/sentiment/rntnDemo.html) Demo of Stanfod sentiment analysis.
-
+Forked from: https://github.com/Ruthwik/Sentiment-Analysis
 
 ## How to build this project
 
-1. Download the project and import into Eclipse
-
+1. Download the project and import the .pom file
 2. Set the build path which must have the following libraries 
 
  * stanford-corenlp-3.8.0
