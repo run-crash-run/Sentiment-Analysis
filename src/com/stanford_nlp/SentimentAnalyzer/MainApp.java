@@ -23,6 +23,8 @@ public class MainApp {
 
 		// negative sentiment (Metallica - fade to balck lyrics)
 		list.add("Everyday In Every Way I’m Getting worse and worse");
+
+		demo(list);
 	}
 
 	public static void demo(List<String> list){
