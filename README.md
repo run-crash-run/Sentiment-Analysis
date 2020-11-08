@@ -1,21 +1,10 @@
 Forked from: https://github.com/Ruthwik/Sentiment-Analysis
 
 ## How to build this project
-
-1. Download the project and import the .pom file
-2. Set the build path which must have the following libraries 
-
- * stanford-corenlp-3.8.0
- * ejml-0.23
- * stanford-corenlp-3.8.0-models
-
-```
-Note: The stanford-corenlp-3.8.0-models has all the trained models. It is not set in the build path of this project due to size constraint. 
-Download the jar file from Stanford NLP site
-```
-3. Run the MainApp.java file
-
-All the dependencies can be downloaded from Stanford NLP [site](https://stanfordnlp.github.io/CoreNLP/) .
+1. Download the language model file from: https://stanfordnlp.github.io/CoreNLP/download.html
+(eg direct link for English: http://nlp.stanford.edu/software/stanford-corenlp-4.1.0-models-english.jar)
+2. Download the project and import the .pom file
+3. Run the MainApp.java file, which will call the demo funtion
 
 ## Code Explained
 ### Initialize
@@ -29,7 +18,6 @@ StanfordCoreNLP pipeline; = new StanfordCoreNLP(props);
 
 
 ### How to find the sentiment score
-
 Run the Annotators on the text and then get the SentimentAnnotatedTree
 ```Java
 // this is the parse tree of the current sentence
@@ -45,7 +33,6 @@ System.out.println("Sentiment Score: " + RNNCoreAnnotations.getPredictedClass(tr
 SimpleMatrix sm = RNNCoreAnnotations.getPredictedClass(tree);
 ```
 The estimated probability/confidence looks something like this from 'sm' object
-
 ```
 Type = dense , numRows = 5 , numCols = 1
  0.111  
@@ -56,7 +43,6 @@ Type = dense , numRows = 5 , numCols = 1
 ```
 
 ### Output
-
 This project has the following output
 ```
 Sentiment Score: 1.0%
